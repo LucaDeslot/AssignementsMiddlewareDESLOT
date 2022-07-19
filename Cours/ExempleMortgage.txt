@@ -1,0 +1,7 @@
+1. 
+context Mortgage
+invariant: slef.security.owner = self.borrower
+
+2. 
+context Mortgage
+invariant: self.startdate < self.enddate
