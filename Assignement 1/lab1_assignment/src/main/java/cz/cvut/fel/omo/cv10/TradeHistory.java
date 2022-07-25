@@ -23,14 +23,11 @@ public class TradeHistory {
     }
 
     public List<String> getUniqueCitiesSortedAsc(){
-        List<String> newList = new ArrayList<String>();
-        for (Transaction t : transactions){
-            if (!newList.contains(t.getTrader().getCity()))
-                   newList.add(t.getTrader().getCity());
-        }
-        Collections.sort(newList);
-        //Implement body here
-        return newList;
+        return transactions.stream()
+                .map(x -> x.getTrader().getCity())
+                .sorted()
+                .distinct()
+                .collect(Collectors.toList());
     }
 
     /*
@@ -38,15 +35,11 @@ public class TradeHistory {
     *
      */
     public String getSingleStringFromUniqueTradersNamesSortByNameAsc(){
-
-        List<String> newList = new ArrayList<>();
-        for(Transaction t : transactions){
-            if (!newList.contains(t.getTrader().getName()))
-                newList.add(t.getTrader().getName());
-        }
-        Collections.sort(newList);
-
-        return newList.stream().reduce("Traders:", (partialString, element) -> partialString + " " + element);
+        return transactions.stream()
+                .map(x -> x.getTrader().getName())
+                .sorted()
+                .distinct()
+                .reduce("Traders:", (partialString, element) -> partialString + " " + element);
     }
 
     public boolean isSomeTraderFromCity(String cityName){
