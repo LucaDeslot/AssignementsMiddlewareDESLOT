@@ -1,0 +1,1039 @@
+2022-07-26T12:55:43.496652+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+2022-07-26T12:55:43.496653+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+2022-07-26T12:55:43.496653+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+2022-07-26T12:55:43.496653+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+2022-07-26T12:55:43.496654+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+2022-07-26T12:55:43.496654+00:00 app[web.1]: 	... 71 common frames omitted
+2022-07-26T12:55:43.571509+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T12:55:43.581465+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26T12:55:43.764163+00:00 heroku[web.1]: Process exited with status 1
+2022-07-26T12:55:43.871397+00:00 heroku[web.1]: State changed from up to crashed
+2022-07-26T13:28:36.386838+00:00 heroku[web.1]: State changed from crashed to starting
+2022-07-26T13:28:40.959019+00:00 heroku[web.1]: Starting process with command `java -Dserver.port=31819 $JAVA_OPTS -jar target/spring-data-jpa-1.0.jar`
+2022-07-26T13:28:41.776597+00:00 app[web.1]: Create a Procfile to customize the command used to run this process: https://devcenter.heroku.com/articles/procfile
+2022-07-26T13:28:41.798350+00:00 app[web.1]: Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+2022-07-26T13:28:41.802529+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 
+2022-07-26T13:28:43.126921+00:00 app[web.1]: 
+2022-07-26T13:28:43.126947+00:00 app[web.1]:   .   ____          _            __ _ _
+2022-07-26T13:28:43.126971+00:00 app[web.1]:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2022-07-26T13:28:43.126996+00:00 app[web.1]: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2022-07-26T13:28:43.127039+00:00 app[web.1]:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2022-07-26T13:28:43.127069+00:00 app[web.1]:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2022-07-26T13:28:43.127118+00:00 app[web.1]:  =========|_|==============|___/=/_/_/_/
+2022-07-26T13:28:43.128376+00:00 app[web.1]:  :: Spring Boot ::        (v2.3.4.RELEASE)
+2022-07-26T13:28:43.128391+00:00 app[web.1]: 
+2022-07-26T13:28:43.271492+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Starting StartApplication v1.0 on 1a7b924f-8fb1-46b8-a629-20b17682114e with PID 4 (/app/target/spring-data-jpa-1.0.jar started by u45150 in /app)
+2022-07-26T13:28:43.271783+00:00 app[web.1]: DEBUG cvut.fel.StartApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2022-07-26T13:28:43.272078+00:00 app[web.1]: INFO  cvut.fel.StartApplication - No active profile set, falling back to default profiles: default
+2022-07-26T13:28:46.321268+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-07-26T13:28:46.375038+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 1 JPA repository interfaces.
+2022-07-26T13:28:48.086800+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 31819 (http)
+2022-07-26T13:28:48.164577+00:00 app[web.1]: INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4848 ms
+2022-07-26T13:28:49.224033+00:00 app[web.1]: INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://ec2-52-204-157-26.compute-1.amazonaws.com:5432/d4d6qtoc591dbf?password=95e2edc07f843fe753f968db06529ea937b33562c91a100fbaffae2339e0b687&sslmode=require&user=yruxwrnvoorndz'
+2022-07-26T13:28:49.315251+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:28:50.211881+00:00 app[web.1]: WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26T13:28:52.365465+00:00 heroku[web.1]: State changed from starting to up
+2022-07-26T13:28:52.058372+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 31819 (http) with context path ''
+2022-07-26T13:28:52.268350+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-07-26T13:28:55.352866+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:28:56.090986+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-07-26T13:28:56.098918+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Started StartApplication in 13.866 seconds (JVM running for 14.296)
+2022-07-26T13:28:56.100507+00:00 app[web.1]: INFO  cvut.fel.StartApplication - StartApplication...
+2022-07-26T13:28:56.162269+00:00 app[web.1]: ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "books" does not exist
+2022-07-26T13:28:56.162273+00:00 app[web.1]:   Position: 13
+2022-07-26T13:28:56.169671+00:00 app[web.1]: INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-07-26T13:28:56.169672+00:00 app[web.1]: 
+2022-07-26T13:28:56.169673+00:00 app[web.1]: Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26T13:28:56.177058+00:00 app[web.1]: ERROR o.s.boot.SpringApplication - Application run failed
+2022-07-26T13:28:56.177059+00:00 app[web.1]: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+2022-07-26T13:28:56.177059+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+2022-07-26T13:28:56.177060+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+2022-07-26T13:28:56.177060+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+2022-07-26T13:28:56.177060+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+2022-07-26T13:28:56.177061+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+2022-07-26T13:28:56.177061+00:00 app[web.1]: 	at cvut.fel.StartApplication.main(StartApplication.java:22)
+2022-07-26T13:28:56.177061+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:28:56.177061+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:28:56.177062+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:28:56.177062+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:28:56.177062+00:00 app[web.1]: 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+2022-07-26T13:28:56.177062+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+2022-07-26T13:28:56.177063+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+2022-07-26T13:28:56.177063+00:00 app[web.1]: 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2022-07-26T13:28:56.177066+00:00 app[web.1]: Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:28:56.177066+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+2022-07-26T13:28:56.177066+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+2022-07-26T13:28:56.177067+00:00 app[web.1]: 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528)
+2022-07-26T13:28:56.177068+00:00 app[web.1]: 	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+2022-07-26T13:28:56.177068+00:00 app[web.1]: 	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+2022-07-26T13:28:56.177068+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:154)
+2022-07-26T13:28:56.177068+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:28:56.177074+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+2022-07-26T13:28:56.177075+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:28:56.177075+00:00 app[web.1]: 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+2022-07-26T13:28:56.177075+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:28:56.177075+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+2022-07-26T13:28:56.177075+00:00 app[web.1]: 	at com.sun.proxy.$Proxy109.save(Unknown Source)
+2022-07-26T13:28:56.177076+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:28:56.177076+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:28:56.177076+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:28:56.177076+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:28:56.177077+00:00 app[web.1]: 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+2022-07-26T13:28:56.177077+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+2022-07-26T13:28:56.177077+00:00 app[web.1]: 	at com.sun.proxy.$Proxy71.save(Unknown Source)
+2022-07-26T13:28:56.177077+00:00 app[web.1]: 	at cvut.fel.StartApplication.run(StartApplication.java:36)
+2022-07-26T13:28:56.177078+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+2022-07-26T13:28:56.177078+00:00 app[web.1]: 	... 13 common frames omitted
+2022-07-26T13:28:56.177078+00:00 app[web.1]: Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:28:56.177079+00:00 app[web.1]: 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+2022-07-26T13:28:56.177079+00:00 app[web.1]: 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+2022-07-26T13:28:56.177079+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+2022-07-26T13:28:56.177084+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+2022-07-26T13:28:56.177084+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+2022-07-26T13:28:56.177085+00:00 app[web.1]: 	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+2022-07-26T13:28:56.177085+00:00 app[web.1]: 	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+2022-07-26T13:28:56.177085+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3153)
+2022-07-26T13:28:56.177085+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3759)
+2022-07-26T13:28:56.177086+00:00 app[web.1]: 	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+2022-07-26T13:28:56.177086+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+2022-07-26T13:28:56.177086+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+2022-07-26T13:28:56.177087+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+2022-07-26T13:28:56.177087+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+2022-07-26T13:28:56.177087+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+2022-07-26T13:28:56.177087+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+2022-07-26T13:28:56.177088+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+2022-07-26T13:28:56.177088+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+2022-07-26T13:28:56.177088+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+2022-07-26T13:28:56.177088+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+2022-07-26T13:28:56.177088+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+2022-07-26T13:28:56.177089+00:00 app[web.1]: 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+2022-07-26T13:28:56.177089+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:721)
+2022-07-26T13:28:56.177089+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:707)
+2022-07-26T13:28:56.177089+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:28:56.177090+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:28:56.177090+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:28:56.177090+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:28:56.177090+00:00 app[web.1]: 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
+2022-07-26T13:28:56.177091+00:00 app[web.1]: 	at com.sun.proxy.$Proxy94.persist(Unknown Source)
+2022-07-26T13:28:56.177091+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554)
+2022-07-26T13:28:56.177091+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:28:56.177093+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:28:56.177093+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:28:56.177093+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:28:56.177093+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.ImplementationInvocationMetadata.invoke(ImplementationInvocationMetadata.java:72)
+2022-07-26T13:28:56.177094+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:382)
+2022-07-26T13:28:56.177096+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:205)
+2022-07-26T13:28:56.177096+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:549)
+2022-07-26T13:28:56.177096+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:28:56.177097+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:155)
+2022-07-26T13:28:56.177097+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+2022-07-26T13:28:56.177097+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:28:56.177100+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+2022-07-26T13:28:56.177100+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+2022-07-26T13:28:56.177101+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:28:56.177101+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+2022-07-26T13:28:56.177101+00:00 app[web.1]: 	... 29 common frames omitted
+2022-07-26T13:28:56.177101+00:00 app[web.1]: Caused by: org.postgresql.util.PSQLException: ERROR: relation "books" does not exist
+2022-07-26T13:28:56.177102+00:00 app[web.1]:   Position: 13
+2022-07-26T13:28:56.177102+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+2022-07-26T13:28:56.177102+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+2022-07-26T13:28:56.177102+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+2022-07-26T13:28:56.177102+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+2022-07-26T13:28:56.177103+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+2022-07-26T13:28:56.177103+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+2022-07-26T13:28:56.177103+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+2022-07-26T13:28:56.177103+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+2022-07-26T13:28:56.177103+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+2022-07-26T13:28:56.177103+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+2022-07-26T13:28:56.177104+00:00 app[web.1]: 	... 71 common frames omitted
+2022-07-26T13:28:56.240100+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:28:56.242103+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:28:56.390103+00:00 heroku[web.1]: Process exited with status 1
+2022-07-26T13:28:56.485223+00:00 heroku[web.1]: State changed from up to crashed
+2022-07-26T13:28:56.488668+00:00 heroku[web.1]: State changed from crashed to starting
+2022-07-26T13:28:59.610032+00:00 heroku[web.1]: Starting process with command `java -Dserver.port=15083 $JAVA_OPTS -jar target/spring-data-jpa-1.0.jar`
+2022-07-26T13:29:00.353291+00:00 app[web.1]: Create a Procfile to customize the command used to run this process: https://devcenter.heroku.com/articles/procfile
+2022-07-26T13:29:00.373807+00:00 app[web.1]: Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+2022-07-26T13:29:00.378368+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 
+2022-07-26T13:29:01.678796+00:00 app[web.1]: 
+2022-07-26T13:29:01.678845+00:00 app[web.1]:   .   ____          _            __ _ _
+2022-07-26T13:29:01.678846+00:00 app[web.1]:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2022-07-26T13:29:01.678847+00:00 app[web.1]: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2022-07-26T13:29:01.678859+00:00 app[web.1]:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2022-07-26T13:29:01.678883+00:00 app[web.1]:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2022-07-26T13:29:01.678914+00:00 app[web.1]:  =========|_|==============|___/=/_/_/_/
+2022-07-26T13:29:01.687041+00:00 app[web.1]:  :: Spring Boot ::        (v2.3.4.RELEASE)
+2022-07-26T13:29:01.687059+00:00 app[web.1]: 
+2022-07-26T13:29:02.503451+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Starting StartApplication v1.0 on cfa985b8-f40b-4bcf-9bd7-fdf9af18ce56 with PID 4 (/app/target/spring-data-jpa-1.0.jar started by u28383 in /app)
+2022-07-26T13:29:02.503869+00:00 app[web.1]: DEBUG cvut.fel.StartApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2022-07-26T13:29:02.504286+00:00 app[web.1]: INFO  cvut.fel.StartApplication - No active profile set, falling back to default profiles: default
+2022-07-26T13:29:05.749980+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-07-26T13:29:05.813129+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56ms. Found 1 JPA repository interfaces.
+2022-07-26T13:29:07.579211+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15083 (http)
+2022-07-26T13:29:07.657718+00:00 app[web.1]: INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5095 ms
+2022-07-26T13:29:08.672643+00:00 app[web.1]: INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://ec2-52-204-157-26.compute-1.amazonaws.com:5432/d4d6qtoc591dbf?password=95e2edc07f843fe753f968db06529ea937b33562c91a100fbaffae2339e0b687&sslmode=require&user=yruxwrnvoorndz'
+2022-07-26T13:29:08.784998+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:29:10.444995+00:00 app[web.1]: WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26T13:29:11.658714+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 15083 (http) with context path ''
+2022-07-26T13:29:11.939883+00:00 heroku[web.1]: State changed from starting to up
+2022-07-26T13:29:12.529053+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-07-26T13:29:14.597285+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:29:14.810344+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-07-26T13:29:14.817059+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Started StartApplication in 13.996 seconds (JVM running for 14.438)
+2022-07-26T13:29:14.818506+00:00 app[web.1]: INFO  cvut.fel.StartApplication - StartApplication...
+2022-07-26T13:29:14.875812+00:00 app[web.1]: ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "books" does not exist
+2022-07-26T13:29:14.875822+00:00 app[web.1]:   Position: 13
+2022-07-26T13:29:14.882826+00:00 app[web.1]: INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-07-26T13:29:14.882828+00:00 app[web.1]: 
+2022-07-26T13:29:14.882829+00:00 app[web.1]: Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26T13:29:14.888791+00:00 app[web.1]: ERROR o.s.boot.SpringApplication - Application run failed
+2022-07-26T13:29:14.888792+00:00 app[web.1]: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+2022-07-26T13:29:14.888792+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+2022-07-26T13:29:14.888792+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+2022-07-26T13:29:14.888792+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+2022-07-26T13:29:14.888793+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+2022-07-26T13:29:14.888793+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+2022-07-26T13:29:14.888793+00:00 app[web.1]: 	at cvut.fel.StartApplication.main(StartApplication.java:22)
+2022-07-26T13:29:14.888794+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:29:14.888794+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:29:14.888794+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:29:14.888795+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:29:14.888795+00:00 app[web.1]: 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+2022-07-26T13:29:14.888795+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+2022-07-26T13:29:14.888795+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+2022-07-26T13:29:14.888796+00:00 app[web.1]: 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2022-07-26T13:29:14.888797+00:00 app[web.1]: Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:29:14.888798+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+2022-07-26T13:29:14.888798+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+2022-07-26T13:29:14.888799+00:00 app[web.1]: 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528)
+2022-07-26T13:29:14.888799+00:00 app[web.1]: 	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+2022-07-26T13:29:14.888800+00:00 app[web.1]: 	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+2022-07-26T13:29:14.888801+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:154)
+2022-07-26T13:29:14.888801+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:29:14.888801+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+2022-07-26T13:29:14.888802+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:29:14.888802+00:00 app[web.1]: 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+2022-07-26T13:29:14.888802+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:29:14.888802+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+2022-07-26T13:29:14.888803+00:00 app[web.1]: 	at com.sun.proxy.$Proxy109.save(Unknown Source)
+2022-07-26T13:29:14.888803+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:29:14.888803+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:29:14.888803+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:29:14.888803+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:29:14.888804+00:00 app[web.1]: 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+2022-07-26T13:29:14.888804+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+2022-07-26T13:29:14.888804+00:00 app[web.1]: 	at com.sun.proxy.$Proxy71.save(Unknown Source)
+2022-07-26T13:29:14.888804+00:00 app[web.1]: 	at cvut.fel.StartApplication.run(StartApplication.java:36)
+2022-07-26T13:29:14.888805+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+2022-07-26T13:29:14.888805+00:00 app[web.1]: 	... 13 common frames omitted
+2022-07-26T13:29:14.888805+00:00 app[web.1]: Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:29:14.888805+00:00 app[web.1]: 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+2022-07-26T13:29:14.888806+00:00 app[web.1]: 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+2022-07-26T13:29:14.888806+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+2022-07-26T13:29:14.888809+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+2022-07-26T13:29:14.888809+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+2022-07-26T13:29:14.888810+00:00 app[web.1]: 	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+2022-07-26T13:29:14.888810+00:00 app[web.1]: 	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+2022-07-26T13:29:14.888810+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3153)
+2022-07-26T13:29:14.888810+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3759)
+2022-07-26T13:29:14.888810+00:00 app[web.1]: 	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+2022-07-26T13:29:14.888810+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+2022-07-26T13:29:14.888811+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+2022-07-26T13:29:14.888811+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+2022-07-26T13:29:14.888811+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+2022-07-26T13:29:14.888811+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+2022-07-26T13:29:14.888811+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+2022-07-26T13:29:14.888811+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+2022-07-26T13:29:14.888812+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+2022-07-26T13:29:14.888812+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+2022-07-26T13:29:14.888812+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+2022-07-26T13:29:14.888812+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+2022-07-26T13:29:14.888812+00:00 app[web.1]: 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+2022-07-26T13:29:14.888813+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:721)
+2022-07-26T13:29:14.888813+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:707)
+2022-07-26T13:29:14.888813+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:29:14.888813+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:29:14.888814+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:29:14.888814+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:29:14.888814+00:00 app[web.1]: 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
+2022-07-26T13:29:14.888814+00:00 app[web.1]: 	at com.sun.proxy.$Proxy99.persist(Unknown Source)
+2022-07-26T13:29:14.888815+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554)
+2022-07-26T13:29:14.888815+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:29:14.888815+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:29:14.888815+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:29:14.888816+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:29:14.888816+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.ImplementationInvocationMetadata.invoke(ImplementationInvocationMetadata.java:72)
+2022-07-26T13:29:14.888816+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:382)
+2022-07-26T13:29:14.888816+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:205)
+2022-07-26T13:29:14.888832+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:549)
+2022-07-26T13:29:14.888832+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:29:14.888833+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:155)
+2022-07-26T13:29:14.888833+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+2022-07-26T13:29:14.888833+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:29:14.888836+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+2022-07-26T13:29:14.888836+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+2022-07-26T13:29:14.888836+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:29:14.888837+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+2022-07-26T13:29:14.888837+00:00 app[web.1]: 	... 29 common frames omitted
+2022-07-26T13:29:14.888837+00:00 app[web.1]: Caused by: org.postgresql.util.PSQLException: ERROR: relation "books" does not exist
+2022-07-26T13:29:14.888838+00:00 app[web.1]:   Position: 13
+2022-07-26T13:29:14.888838+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+2022-07-26T13:29:14.888838+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+2022-07-26T13:29:14.888838+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+2022-07-26T13:29:14.888839+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+2022-07-26T13:29:14.888839+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+2022-07-26T13:29:14.888839+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+2022-07-26T13:29:14.888839+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+2022-07-26T13:29:14.888839+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+2022-07-26T13:29:14.888839+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+2022-07-26T13:29:14.888840+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+2022-07-26T13:29:14.888840+00:00 app[web.1]: 	... 71 common frames omitted
+2022-07-26T13:29:14.949476+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:29:14.951196+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:29:15.548959+00:00 heroku[web.1]: Process exited with status 1
+2022-07-26T13:29:15.649344+00:00 heroku[web.1]: State changed from up to crashed
+2022-07-26T13:39:55.271462+00:00 heroku[web.1]: State changed from crashed to starting
+2022-07-26T13:39:59.000331+00:00 heroku[web.1]: Starting process with command `java -Dserver.port=15624 $JAVA_OPTS -jar target/spring-data-jpa-1.0.jar`
+2022-07-26T13:39:59.782929+00:00 app[web.1]: Create a Procfile to customize the command used to run this process: https://devcenter.heroku.com/articles/procfile
+2022-07-26T13:39:59.810256+00:00 app[web.1]: Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+2022-07-26T13:39:59.814723+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 
+2022-07-26T13:40:01.605343+00:00 app[web.1]: 
+2022-07-26T13:40:01.605368+00:00 app[web.1]:   .   ____          _            __ _ _
+2022-07-26T13:40:01.605401+00:00 app[web.1]:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2022-07-26T13:40:01.605453+00:00 app[web.1]: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2022-07-26T13:40:01.605666+00:00 app[web.1]:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2022-07-26T13:40:01.605713+00:00 app[web.1]:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2022-07-26T13:40:01.605756+00:00 app[web.1]:  =========|_|==============|___/=/_/_/_/
+2022-07-26T13:40:01.608290+00:00 app[web.1]:  :: Spring Boot ::        (v2.3.4.RELEASE)
+2022-07-26T13:40:01.608316+00:00 app[web.1]: 
+2022-07-26T13:40:01.866278+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Starting StartApplication v1.0 on 961f8f16-549a-4edd-8bda-cda104d80726 with PID 4 (/app/target/spring-data-jpa-1.0.jar started by u5898 in /app)
+2022-07-26T13:40:01.866937+00:00 app[web.1]: DEBUG cvut.fel.StartApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2022-07-26T13:40:01.872781+00:00 app[web.1]: INFO  cvut.fel.StartApplication - No active profile set, falling back to default profiles: default
+2022-07-26T13:40:05.942594+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-07-26T13:40:06.593228+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 643ms. Found 1 JPA repository interfaces.
+2022-07-26T13:40:07.879038+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15624 (http)
+2022-07-26T13:40:08.010274+00:00 app[web.1]: INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5437 ms
+2022-07-26T13:40:09.673566+00:00 app[web.1]: INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://ec2-52-204-157-26.compute-1.amazonaws.com:5432/d4d6qtoc591dbf?password=95e2edc07f843fe753f968db06529ea937b33562c91a100fbaffae2339e0b687&sslmode=require&user=yruxwrnvoorndz'
+2022-07-26T13:40:09.793531+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:40:10.793313+00:00 app[web.1]: WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26T13:40:12.884433+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 15624 (http) with context path ''
+2022-07-26T13:40:13.432414+00:00 heroku[web.1]: State changed from starting to up
+2022-07-26T13:40:13.743032+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-07-26T13:40:15.979643+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:40:16.822562+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-07-26T13:40:16.831863+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Started StartApplication in 16.22 seconds (JVM running for 17.017)
+2022-07-26T13:40:16.833651+00:00 app[web.1]: INFO  cvut.fel.StartApplication - StartApplication...
+2022-07-26T13:40:16.899903+00:00 app[web.1]: ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "books" does not exist
+2022-07-26T13:40:16.899906+00:00 app[web.1]:   Position: 13
+2022-07-26T13:40:16.908053+00:00 app[web.1]: INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-07-26T13:40:16.908055+00:00 app[web.1]: 
+2022-07-26T13:40:16.908055+00:00 app[web.1]: Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26T13:40:16.914971+00:00 app[web.1]: ERROR o.s.boot.SpringApplication - Application run failed
+2022-07-26T13:40:16.914972+00:00 app[web.1]: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+2022-07-26T13:40:16.914973+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+2022-07-26T13:40:16.914973+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+2022-07-26T13:40:16.914974+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+2022-07-26T13:40:16.914974+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+2022-07-26T13:40:16.914974+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+2022-07-26T13:40:16.914975+00:00 app[web.1]: 	at cvut.fel.StartApplication.main(StartApplication.java:22)
+2022-07-26T13:40:16.914975+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:40:16.914975+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:40:16.914976+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:40:16.914976+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:40:16.914977+00:00 app[web.1]: 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+2022-07-26T13:40:16.914977+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+2022-07-26T13:40:16.914977+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+2022-07-26T13:40:16.914979+00:00 app[web.1]: 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2022-07-26T13:40:16.914981+00:00 app[web.1]: Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:40:16.914981+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+2022-07-26T13:40:16.914982+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+2022-07-26T13:40:16.914982+00:00 app[web.1]: 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528)
+2022-07-26T13:40:16.914983+00:00 app[web.1]: 	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+2022-07-26T13:40:16.914984+00:00 app[web.1]: 	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+2022-07-26T13:40:16.914984+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:154)
+2022-07-26T13:40:16.914984+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:40:16.914985+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+2022-07-26T13:40:16.914985+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:40:16.914986+00:00 app[web.1]: 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+2022-07-26T13:40:16.914986+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:40:16.914987+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+2022-07-26T13:40:16.914987+00:00 app[web.1]: 	at com.sun.proxy.$Proxy109.save(Unknown Source)
+2022-07-26T13:40:16.914987+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:40:16.914988+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:40:16.914988+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:40:16.914988+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:40:16.914989+00:00 app[web.1]: 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+2022-07-26T13:40:16.914989+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+2022-07-26T13:40:16.914989+00:00 app[web.1]: 	at com.sun.proxy.$Proxy71.save(Unknown Source)
+2022-07-26T13:40:16.914990+00:00 app[web.1]: 	at cvut.fel.StartApplication.run(StartApplication.java:36)
+2022-07-26T13:40:16.914990+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+2022-07-26T13:40:16.914991+00:00 app[web.1]: 	... 13 common frames omitted
+2022-07-26T13:40:16.914992+00:00 app[web.1]: Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:40:16.914992+00:00 app[web.1]: 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+2022-07-26T13:40:16.914992+00:00 app[web.1]: 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+2022-07-26T13:40:16.914993+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+2022-07-26T13:40:16.914999+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+2022-07-26T13:40:16.915000+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+2022-07-26T13:40:16.915000+00:00 app[web.1]: 	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+2022-07-26T13:40:16.915000+00:00 app[web.1]: 	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+2022-07-26T13:40:16.915001+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3153)
+2022-07-26T13:40:16.915001+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3759)
+2022-07-26T13:40:16.915001+00:00 app[web.1]: 	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+2022-07-26T13:40:16.915002+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+2022-07-26T13:40:16.915002+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+2022-07-26T13:40:16.915002+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+2022-07-26T13:40:16.915003+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+2022-07-26T13:40:16.915003+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+2022-07-26T13:40:16.915003+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+2022-07-26T13:40:16.915004+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+2022-07-26T13:40:16.915004+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+2022-07-26T13:40:16.915004+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+2022-07-26T13:40:16.915005+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+2022-07-26T13:40:16.915005+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+2022-07-26T13:40:16.915005+00:00 app[web.1]: 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+2022-07-26T13:40:16.915006+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:721)
+2022-07-26T13:40:16.915006+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:707)
+2022-07-26T13:40:16.915006+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:40:16.915007+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:40:16.915007+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:40:16.915007+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:40:16.915008+00:00 app[web.1]: 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
+2022-07-26T13:40:16.915008+00:00 app[web.1]: 	at com.sun.proxy.$Proxy94.persist(Unknown Source)
+2022-07-26T13:40:16.915009+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554)
+2022-07-26T13:40:16.915009+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:40:16.915009+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:40:16.915010+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:40:16.915010+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:40:16.915010+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.ImplementationInvocationMetadata.invoke(ImplementationInvocationMetadata.java:72)
+2022-07-26T13:40:16.915011+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:382)
+2022-07-26T13:40:16.915011+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:205)
+2022-07-26T13:40:16.915012+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:549)
+2022-07-26T13:40:16.915012+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:40:16.915012+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:155)
+2022-07-26T13:40:16.915013+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+2022-07-26T13:40:16.915013+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:40:16.915017+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+2022-07-26T13:40:16.915017+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+2022-07-26T13:40:16.915017+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:40:16.915018+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+2022-07-26T13:40:16.915018+00:00 app[web.1]: 	... 29 common frames omitted
+2022-07-26T13:40:16.915018+00:00 app[web.1]: Caused by: org.postgresql.util.PSQLException: ERROR: relation "books" does not exist
+2022-07-26T13:40:16.915019+00:00 app[web.1]:   Position: 13
+2022-07-26T13:40:16.915019+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+2022-07-26T13:40:16.915019+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+2022-07-26T13:40:16.915020+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+2022-07-26T13:40:16.915020+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+2022-07-26T13:40:16.915021+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+2022-07-26T13:40:16.915021+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+2022-07-26T13:40:16.915021+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+2022-07-26T13:40:16.915022+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+2022-07-26T13:40:16.915022+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+2022-07-26T13:40:16.915022+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+2022-07-26T13:40:16.915023+00:00 app[web.1]: 	... 71 common frames omitted
+2022-07-26T13:40:16.984161+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:40:16.986462+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:40:17.233277+00:00 heroku[web.1]: Process exited with status 1
+2022-07-26T13:40:17.300655+00:00 heroku[web.1]: State changed from up to crashed
+2022-07-26T13:52:45.120896+00:00 heroku[web.1]: State changed from crashed to starting
+2022-07-26T13:52:48.591910+00:00 heroku[web.1]: Starting process with command `java -Dserver.port=8968 $JAVA_OPTS -jar target/spring-data-jpa-1.0.jar`
+2022-07-26T13:52:49.385606+00:00 app[web.1]: Create a Procfile to customize the command used to run this process: https://devcenter.heroku.com/articles/procfile
+2022-07-26T13:52:49.403504+00:00 app[web.1]: Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+2022-07-26T13:52:49.407064+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 
+2022-07-26T13:52:51.686862+00:00 app[web.1]: 
+2022-07-26T13:52:51.687127+00:00 app[web.1]:   .   ____          _            __ _ _
+2022-07-26T13:52:51.687168+00:00 app[web.1]:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2022-07-26T13:52:51.687283+00:00 app[web.1]: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2022-07-26T13:52:51.687334+00:00 app[web.1]:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2022-07-26T13:52:51.687372+00:00 app[web.1]:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2022-07-26T13:52:51.687408+00:00 app[web.1]:  =========|_|==============|___/=/_/_/_/
+2022-07-26T13:52:51.689046+00:00 app[web.1]:  :: Spring Boot ::        (v2.3.4.RELEASE)
+2022-07-26T13:52:51.689071+00:00 app[web.1]: 
+2022-07-26T13:52:52.208676+00:00 heroku[web.1]: Restarting
+2022-07-26T13:52:52.438307+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Starting StartApplication v1.0 on 9c3a26de-eaa3-4aa7-93ea-8b541c140949 with PID 4 (/app/target/spring-data-jpa-1.0.jar started by u33339 in /app)
+2022-07-26T13:52:52.438643+00:00 app[web.1]: DEBUG cvut.fel.StartApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2022-07-26T13:52:52.439041+00:00 app[web.1]: INFO  cvut.fel.StartApplication - No active profile set, falling back to default profiles: default
+2022-07-26T13:52:55.458898+00:00 heroku[web.1]: Starting process with command `java -Dserver.port=32540 $JAVA_OPTS -jar target/spring-data-jpa-1.0.jar`
+2022-07-26T13:52:56.888607+00:00 app[web.1]: Create a Procfile to customize the command used to run this process: https://devcenter.heroku.com/articles/procfile
+2022-07-26T13:52:56.920681+00:00 app[web.1]: Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+2022-07-26T13:52:56.925047+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 
+2022-07-26T13:52:57.429869+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-07-26T13:52:57.500217+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60ms. Found 1 JPA repository interfaces.
+2022-07-26T13:52:59.428940+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8968 (http)
+2022-07-26T13:52:59.576461+00:00 app[web.1]: INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7025 ms
+2022-07-26T13:53:00.738498+00:00 app[web.1]: 
+2022-07-26T13:53:00.738531+00:00 app[web.1]:   .   ____          _            __ _ _
+2022-07-26T13:53:00.738580+00:00 app[web.1]:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2022-07-26T13:53:00.738609+00:00 app[web.1]: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2022-07-26T13:53:00.738641+00:00 app[web.1]:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2022-07-26T13:53:00.738669+00:00 app[web.1]:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2022-07-26T13:53:00.738692+00:00 app[web.1]:  =========|_|==============|___/=/_/_/_/
+2022-07-26T13:53:00.739934+00:00 app[web.1]:  :: Spring Boot ::        (v2.3.4.RELEASE)
+2022-07-26T13:53:00.739955+00:00 app[web.1]: 
+2022-07-26T13:53:00.938619+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Starting StartApplication v1.0 on dd3faa64-aa8e-4df6-ae4f-1dce7a4455ca with PID 4 (/app/target/spring-data-jpa-1.0.jar started by u31581 in /app)
+2022-07-26T13:53:00.938920+00:00 app[web.1]: DEBUG cvut.fel.StartApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2022-07-26T13:53:00.939320+00:00 app[web.1]: INFO  cvut.fel.StartApplication - No active profile set, falling back to default profiles: default
+2022-07-26T13:53:01.385190+00:00 app[web.1]: INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://ec2-52-204-157-26.compute-1.amazonaws.com:5432/d4d6qtoc591dbf?password=95e2edc07f843fe753f968db06529ea937b33562c91a100fbaffae2339e0b687&sslmode=require&user=yruxwrnvoorndz'
+2022-07-26T13:53:01.558416+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:53:02.595476+00:00 app[web.1]: WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26T13:53:04.629776+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8968 (http) with context path ''
+2022-07-26T13:53:04.976791+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-07-26T13:53:05.050390+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65ms. Found 1 JPA repository interfaces.
+2022-07-26T13:53:05.938340+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2022-07-26T13:53:05.758328+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-07-26T13:53:06.833217+00:00 heroku[web.1]: Process exited with status 143
+2022-07-26T13:53:07.025718+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 32540 (http)
+2022-07-26T13:53:07.680158+00:00 app[web.1]: INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5997 ms
+2022-07-26T13:53:08.930042+00:00 app[web.1]: INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://ec2-52-204-157-26.compute-1.amazonaws.com:5432/d4d6qtoc591dbf?password=95e2edc07f843fe753f968db06529ea937b33562c91a100fbaffae2339e0b687&sslmode=require&user=yruxwrnvoorndz'
+2022-07-26T13:53:09.058733+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:53:09.952404+00:00 app[web.1]: WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26T13:53:12.707634+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 32540 (http) with context path ''
+2022-07-26T13:53:13.195777+00:00 heroku[web.1]: State changed from starting to up
+2022-07-26T13:53:13.722796+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-07-26T13:53:15.980371+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:53:16.757955+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-07-26T13:53:16.765819+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Started StartApplication in 17.715 seconds (JVM running for 19.841)
+2022-07-26T13:53:16.767816+00:00 app[web.1]: INFO  cvut.fel.StartApplication - StartApplication...
+2022-07-26T13:53:16.833977+00:00 app[web.1]: ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "books" does not exist
+2022-07-26T13:53:16.833979+00:00 app[web.1]:   Position: 13
+2022-07-26T13:53:16.841061+00:00 app[web.1]: INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-07-26T13:53:16.841063+00:00 app[web.1]: 
+2022-07-26T13:53:16.841064+00:00 app[web.1]: Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26T13:53:16.847619+00:00 app[web.1]: ERROR o.s.boot.SpringApplication - Application run failed
+2022-07-26T13:53:16.847620+00:00 app[web.1]: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+2022-07-26T13:53:16.847621+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+2022-07-26T13:53:16.847623+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+2022-07-26T13:53:16.847623+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+2022-07-26T13:53:16.847623+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+2022-07-26T13:53:16.847624+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+2022-07-26T13:53:16.847624+00:00 app[web.1]: 	at cvut.fel.StartApplication.main(StartApplication.java:22)
+2022-07-26T13:53:16.847625+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:53:16.847625+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:53:16.847626+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:53:16.847626+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:53:16.847626+00:00 app[web.1]: 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+2022-07-26T13:53:16.847627+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+2022-07-26T13:53:16.847627+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+2022-07-26T13:53:16.847628+00:00 app[web.1]: 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2022-07-26T13:53:16.847630+00:00 app[web.1]: Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:53:16.847631+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+2022-07-26T13:53:16.847631+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+2022-07-26T13:53:16.847632+00:00 app[web.1]: 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528)
+2022-07-26T13:53:16.847633+00:00 app[web.1]: 	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+2022-07-26T13:53:16.847633+00:00 app[web.1]: 	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+2022-07-26T13:53:16.847634+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:154)
+2022-07-26T13:53:16.847634+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:16.847635+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+2022-07-26T13:53:16.847635+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:16.847636+00:00 app[web.1]: 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+2022-07-26T13:53:16.847636+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:16.847636+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+2022-07-26T13:53:16.847637+00:00 app[web.1]: 	at com.sun.proxy.$Proxy109.save(Unknown Source)
+2022-07-26T13:53:16.847637+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:53:16.847637+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:53:16.847637+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:53:16.847638+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:53:16.847638+00:00 app[web.1]: 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+2022-07-26T13:53:16.847638+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+2022-07-26T13:53:16.847639+00:00 app[web.1]: 	at com.sun.proxy.$Proxy71.save(Unknown Source)
+2022-07-26T13:53:16.847639+00:00 app[web.1]: 	at cvut.fel.StartApplication.run(StartApplication.java:36)
+2022-07-26T13:53:16.847640+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+2022-07-26T13:53:16.847640+00:00 app[web.1]: 	... 13 common frames omitted
+2022-07-26T13:53:16.847641+00:00 app[web.1]: Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:53:16.847653+00:00 app[web.1]: 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+2022-07-26T13:53:16.847654+00:00 app[web.1]: 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+2022-07-26T13:53:16.847654+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+2022-07-26T13:53:16.847659+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+2022-07-26T13:53:16.847659+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+2022-07-26T13:53:16.847659+00:00 app[web.1]: 	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+2022-07-26T13:53:16.847660+00:00 app[web.1]: 	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+2022-07-26T13:53:16.847660+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3153)
+2022-07-26T13:53:16.847660+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3759)
+2022-07-26T13:53:16.847660+00:00 app[web.1]: 	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+2022-07-26T13:53:16.847661+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+2022-07-26T13:53:16.847661+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+2022-07-26T13:53:16.847661+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+2022-07-26T13:53:16.847662+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+2022-07-26T13:53:16.847662+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+2022-07-26T13:53:16.847662+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+2022-07-26T13:53:16.847663+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+2022-07-26T13:53:16.847663+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+2022-07-26T13:53:16.847663+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+2022-07-26T13:53:16.847663+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+2022-07-26T13:53:16.847663+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+2022-07-26T13:53:16.847664+00:00 app[web.1]: 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+2022-07-26T13:53:16.847664+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:721)
+2022-07-26T13:53:16.847664+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:707)
+2022-07-26T13:53:16.847664+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:53:16.847665+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:53:16.847665+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:53:16.847665+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:53:16.847666+00:00 app[web.1]: 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
+2022-07-26T13:53:16.847666+00:00 app[web.1]: 	at com.sun.proxy.$Proxy104.persist(Unknown Source)
+2022-07-26T13:53:16.847667+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554)
+2022-07-26T13:53:16.847667+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:53:16.847667+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:53:16.847667+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:53:16.847668+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:53:16.847668+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.ImplementationInvocationMetadata.invoke(ImplementationInvocationMetadata.java:72)
+2022-07-26T13:53:16.847669+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:382)
+2022-07-26T13:53:16.847669+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:205)
+2022-07-26T13:53:16.847678+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:549)
+2022-07-26T13:53:16.847679+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:16.847679+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:155)
+2022-07-26T13:53:16.847679+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+2022-07-26T13:53:16.847680+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:16.847684+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+2022-07-26T13:53:16.847684+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+2022-07-26T13:53:16.847684+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:16.847685+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+2022-07-26T13:53:16.847685+00:00 app[web.1]: 	... 29 common frames omitted
+2022-07-26T13:53:16.847685+00:00 app[web.1]: Caused by: org.postgresql.util.PSQLException: ERROR: relation "books" does not exist
+2022-07-26T13:53:16.847686+00:00 app[web.1]:   Position: 13
+2022-07-26T13:53:16.847686+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+2022-07-26T13:53:16.847686+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+2022-07-26T13:53:16.847687+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+2022-07-26T13:53:16.847687+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+2022-07-26T13:53:16.847688+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+2022-07-26T13:53:16.847688+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+2022-07-26T13:53:16.847688+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+2022-07-26T13:53:16.847689+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+2022-07-26T13:53:16.847689+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+2022-07-26T13:53:16.847689+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+2022-07-26T13:53:16.847690+00:00 app[web.1]: 	... 71 common frames omitted
+2022-07-26T13:53:16.910786+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:53:16.912584+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:53:17.070512+00:00 heroku[web.1]: Process exited with status 1
+2022-07-26T13:53:17.187284+00:00 heroku[web.1]: State changed from up to crashed
+2022-07-26T13:53:17.191133+00:00 heroku[web.1]: State changed from crashed to starting
+2022-07-26T13:53:20.337309+00:00 heroku[web.1]: Starting process with command `java -Dserver.port=24087 $JAVA_OPTS -jar target/spring-data-jpa-1.0.jar`
+2022-07-26T13:53:21.012259+00:00 app[web.1]: Create a Procfile to customize the command used to run this process: https://devcenter.heroku.com/articles/procfile
+2022-07-26T13:53:21.026449+00:00 app[web.1]: Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+2022-07-26T13:53:21.029644+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 
+2022-07-26T13:53:22.946510+00:00 app[web.1]: 
+2022-07-26T13:53:22.946553+00:00 app[web.1]:   .   ____          _            __ _ _
+2022-07-26T13:53:22.946617+00:00 app[web.1]:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2022-07-26T13:53:22.946671+00:00 app[web.1]: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2022-07-26T13:53:22.946720+00:00 app[web.1]:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2022-07-26T13:53:22.946778+00:00 app[web.1]:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2022-07-26T13:53:22.946819+00:00 app[web.1]:  =========|_|==============|___/=/_/_/_/
+2022-07-26T13:53:22.948644+00:00 app[web.1]:  :: Spring Boot ::        (v2.3.4.RELEASE)
+2022-07-26T13:53:22.948674+00:00 app[web.1]: 
+2022-07-26T13:53:23.105773+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Starting StartApplication v1.0 on 3b2bc4bd-d277-4f18-85a1-1362b5240741 with PID 4 (/app/target/spring-data-jpa-1.0.jar started by u27269 in /app)
+2022-07-26T13:53:23.106089+00:00 app[web.1]: DEBUG cvut.fel.StartApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2022-07-26T13:53:23.106422+00:00 app[web.1]: INFO  cvut.fel.StartApplication - No active profile set, falling back to default profiles: default
+2022-07-26T13:53:26.322159+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-07-26T13:53:26.915843+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 586ms. Found 1 JPA repository interfaces.
+2022-07-26T13:53:28.136820+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 24087 (http)
+2022-07-26T13:53:28.218580+00:00 app[web.1]: INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5061 ms
+2022-07-26T13:53:29.921451+00:00 app[web.1]: INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://ec2-52-204-157-26.compute-1.amazonaws.com:5432/d4d6qtoc591dbf?password=95e2edc07f843fe753f968db06529ea937b33562c91a100fbaffae2339e0b687&sslmode=require&user=yruxwrnvoorndz'
+2022-07-26T13:53:30.027842+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:53:31.054321+00:00 app[web.1]: WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26T13:53:33.195627+00:00 heroku[web.1]: State changed from starting to up
+2022-07-26T13:53:32.983819+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 24087 (http) with context path ''
+2022-07-26T13:53:33.995379+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-07-26T13:53:36.176639+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:53:36.942689+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-07-26T13:53:36.950139+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Started StartApplication in 14.936 seconds (JVM running for 15.92)
+2022-07-26T13:53:36.951713+00:00 app[web.1]: INFO  cvut.fel.StartApplication - StartApplication...
+2022-07-26T13:53:37.029134+00:00 app[web.1]: ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "books" does not exist
+2022-07-26T13:53:37.029136+00:00 app[web.1]:   Position: 13
+2022-07-26T13:53:37.038111+00:00 app[web.1]: INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-07-26T13:53:37.038112+00:00 app[web.1]: 
+2022-07-26T13:53:37.038113+00:00 app[web.1]: Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26T13:53:37.045898+00:00 app[web.1]: ERROR o.s.boot.SpringApplication - Application run failed
+2022-07-26T13:53:37.045899+00:00 app[web.1]: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+2022-07-26T13:53:37.045899+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+2022-07-26T13:53:37.045900+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+2022-07-26T13:53:37.045900+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+2022-07-26T13:53:37.045900+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+2022-07-26T13:53:37.045900+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+2022-07-26T13:53:37.045901+00:00 app[web.1]: 	at cvut.fel.StartApplication.main(StartApplication.java:22)
+2022-07-26T13:53:37.045901+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:53:37.045901+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:53:37.045901+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:53:37.045902+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:53:37.045902+00:00 app[web.1]: 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+2022-07-26T13:53:37.045902+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+2022-07-26T13:53:37.045902+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+2022-07-26T13:53:37.045903+00:00 app[web.1]: 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2022-07-26T13:53:37.045905+00:00 app[web.1]: Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:53:37.045905+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+2022-07-26T13:53:37.045905+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+2022-07-26T13:53:37.045906+00:00 app[web.1]: 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528)
+2022-07-26T13:53:37.045907+00:00 app[web.1]: 	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+2022-07-26T13:53:37.045907+00:00 app[web.1]: 	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+2022-07-26T13:53:37.045907+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:154)
+2022-07-26T13:53:37.045907+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:37.045908+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+2022-07-26T13:53:37.045908+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:37.045908+00:00 app[web.1]: 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+2022-07-26T13:53:37.045909+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:37.045909+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+2022-07-26T13:53:37.045909+00:00 app[web.1]: 	at com.sun.proxy.$Proxy109.save(Unknown Source)
+2022-07-26T13:53:37.045909+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:53:37.045909+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:53:37.045910+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:53:37.045910+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:53:37.045910+00:00 app[web.1]: 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+2022-07-26T13:53:37.045910+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+2022-07-26T13:53:37.045910+00:00 app[web.1]: 	at com.sun.proxy.$Proxy71.save(Unknown Source)
+2022-07-26T13:53:37.045910+00:00 app[web.1]: 	at cvut.fel.StartApplication.run(StartApplication.java:36)
+2022-07-26T13:53:37.045911+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+2022-07-26T13:53:37.045911+00:00 app[web.1]: 	... 13 common frames omitted
+2022-07-26T13:53:37.045911+00:00 app[web.1]: Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:53:37.045911+00:00 app[web.1]: 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+2022-07-26T13:53:37.045912+00:00 app[web.1]: 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+2022-07-26T13:53:37.045912+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+2022-07-26T13:53:37.045915+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+2022-07-26T13:53:37.045915+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+2022-07-26T13:53:37.045915+00:00 app[web.1]: 	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+2022-07-26T13:53:37.045915+00:00 app[web.1]: 	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+2022-07-26T13:53:37.045916+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3153)
+2022-07-26T13:53:37.045916+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3759)
+2022-07-26T13:53:37.045916+00:00 app[web.1]: 	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+2022-07-26T13:53:37.045916+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+2022-07-26T13:53:37.045916+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+2022-07-26T13:53:37.045916+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+2022-07-26T13:53:37.045917+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+2022-07-26T13:53:37.045917+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+2022-07-26T13:53:37.045917+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+2022-07-26T13:53:37.045917+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+2022-07-26T13:53:37.045918+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+2022-07-26T13:53:37.045918+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+2022-07-26T13:53:37.045918+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+2022-07-26T13:53:37.045918+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+2022-07-26T13:53:37.045918+00:00 app[web.1]: 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+2022-07-26T13:53:37.045919+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:721)
+2022-07-26T13:53:37.045919+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:707)
+2022-07-26T13:53:37.045919+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:53:37.045919+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:53:37.045920+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:53:37.045920+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:53:37.045920+00:00 app[web.1]: 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
+2022-07-26T13:53:37.045920+00:00 app[web.1]: 	at com.sun.proxy.$Proxy104.persist(Unknown Source)
+2022-07-26T13:53:37.045921+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554)
+2022-07-26T13:53:37.045921+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:53:37.045921+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:53:37.045921+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:53:37.045921+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:53:37.045922+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.ImplementationInvocationMetadata.invoke(ImplementationInvocationMetadata.java:72)
+2022-07-26T13:53:37.045922+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:382)
+2022-07-26T13:53:37.045922+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:205)
+2022-07-26T13:53:37.045923+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:549)
+2022-07-26T13:53:37.045923+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:37.045924+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:155)
+2022-07-26T13:53:37.045924+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+2022-07-26T13:53:37.045924+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:37.045927+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+2022-07-26T13:53:37.045927+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+2022-07-26T13:53:37.045927+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:53:37.045927+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+2022-07-26T13:53:37.045928+00:00 app[web.1]: 	... 29 common frames omitted
+2022-07-26T13:53:37.045928+00:00 app[web.1]: Caused by: org.postgresql.util.PSQLException: ERROR: relation "books" does not exist
+2022-07-26T13:53:37.045928+00:00 app[web.1]:   Position: 13
+2022-07-26T13:53:37.045929+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+2022-07-26T13:53:37.045929+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+2022-07-26T13:53:37.045929+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+2022-07-26T13:53:37.045929+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+2022-07-26T13:53:37.045929+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+2022-07-26T13:53:37.045929+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+2022-07-26T13:53:37.045930+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+2022-07-26T13:53:37.045930+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+2022-07-26T13:53:37.045930+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+2022-07-26T13:53:37.045930+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+2022-07-26T13:53:37.045930+00:00 app[web.1]: 	... 71 common frames omitted
+2022-07-26T13:53:37.110728+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:53:37.113931+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:53:37.337013+00:00 heroku[web.1]: Process exited with status 1
+2022-07-26T13:53:37.380169+00:00 heroku[web.1]: State changed from up to crashed
+2022-07-26T13:52:31.000000+00:00 app[api]: Build started by user deslot.luca@gmail.com
+2022-07-26T13:53:45.559939+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=testheorokudb.herokuapp.com request_id=2ccd72e6-1356-4da5-89d8-c5cfd569078c fwd="147.32.213.240" dyno= connect= service= status=503 bytes= protocol=https
+2022-07-26T13:53:46.326632+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=testheorokudb.herokuapp.com request_id=d501f25e-6caf-44f6-8199-a8ebaea99a1a fwd="147.32.213.240" dyno= connect= service= status=503 bytes= protocol=https
+2022-07-26T13:52:51.952016+00:00 app[api]: Release v8 created by user deslot.luca@gmail.com
+2022-07-26T13:52:51.952016+00:00 app[api]: Deploy 2c0a844e by user deslot.luca@gmail.com
+2022-07-26T13:52:57.000000+00:00 app[api]: Build succeeded
+2022-07-26T13:58:01.790666+00:00 heroku[web.1]: State changed from crashed to starting
+2022-07-26T13:58:04.927075+00:00 heroku[web.1]: Starting process with command `java -Dserver.port=23956 $JAVA_OPTS -jar target/spring-data-jpa-1.0.jar`
+2022-07-26T13:58:05.719188+00:00 app[web.1]: Create a Procfile to customize the command used to run this process: https://devcenter.heroku.com/articles/procfile
+2022-07-26T13:58:05.736195+00:00 app[web.1]: Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+2022-07-26T13:58:05.739641+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 
+2022-07-26T13:58:07.793214+00:00 app[web.1]: 
+2022-07-26T13:58:07.793234+00:00 app[web.1]:   .   ____          _            __ _ _
+2022-07-26T13:58:07.793267+00:00 app[web.1]:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2022-07-26T13:58:07.793300+00:00 app[web.1]: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2022-07-26T13:58:07.793331+00:00 app[web.1]:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2022-07-26T13:58:07.793363+00:00 app[web.1]:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2022-07-26T13:58:07.793393+00:00 app[web.1]:  =========|_|==============|___/=/_/_/_/
+2022-07-26T13:58:07.818405+00:00 app[web.1]:  :: Spring Boot ::        (v2.3.4.RELEASE)
+2022-07-26T13:58:07.818435+00:00 app[web.1]: 
+2022-07-26T13:58:08.011089+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Starting StartApplication v1.0 on 47867806-f418-484b-9d72-dd9b1142f8c3 with PID 4 (/app/target/spring-data-jpa-1.0.jar started by u54060 in /app)
+2022-07-26T13:58:08.011545+00:00 app[web.1]: DEBUG cvut.fel.StartApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2022-07-26T13:58:08.011935+00:00 app[web.1]: INFO  cvut.fel.StartApplication - No active profile set, falling back to default profiles: default
+2022-07-26T13:58:11.982275+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-07-26T13:58:12.132391+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 142ms. Found 1 JPA repository interfaces.
+2022-07-26T13:58:14.024186+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 23956 (http)
+2022-07-26T13:58:14.105163+00:00 app[web.1]: INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6030 ms
+2022-07-26T13:58:15.119721+00:00 app[web.1]: INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://ec2-52-204-157-26.compute-1.amazonaws.com:5432/d4d6qtoc591dbf?password=95e2edc07f843fe753f968db06529ea937b33562c91a100fbaffae2339e0b687&sslmode=require&user=yruxwrnvoorndz'
+2022-07-26T13:58:15.847810+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:58:16.883681+00:00 app[web.1]: WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26T13:58:19.062720+00:00 heroku[web.1]: State changed from starting to up
+2022-07-26T13:58:18.824342+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 23956 (http) with context path ''
+2022-07-26T13:58:19.064665+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-07-26T13:58:21.801490+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:58:22.026486+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-07-26T13:58:22.034728+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Started StartApplication in 15.208 seconds (JVM running for 16.295)
+2022-07-26T13:58:22.036564+00:00 app[web.1]: INFO  cvut.fel.StartApplication - StartApplication...
+2022-07-26T13:58:22.100008+00:00 app[web.1]: ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "books" does not exist
+2022-07-26T13:58:22.100017+00:00 app[web.1]:   Position: 13
+2022-07-26T13:58:22.107649+00:00 app[web.1]: INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-07-26T13:58:22.107651+00:00 app[web.1]: 
+2022-07-26T13:58:22.107652+00:00 app[web.1]: Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26T13:58:22.114253+00:00 app[web.1]: ERROR o.s.boot.SpringApplication - Application run failed
+2022-07-26T13:58:22.114254+00:00 app[web.1]: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+2022-07-26T13:58:22.114255+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+2022-07-26T13:58:22.114255+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+2022-07-26T13:58:22.114256+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+2022-07-26T13:58:22.114256+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+2022-07-26T13:58:22.114256+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+2022-07-26T13:58:22.114257+00:00 app[web.1]: 	at cvut.fel.StartApplication.main(StartApplication.java:22)
+2022-07-26T13:58:22.114257+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:58:22.114258+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:58:22.114258+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:58:22.114258+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:58:22.114261+00:00 app[web.1]: 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+2022-07-26T13:58:22.114262+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+2022-07-26T13:58:22.114262+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+2022-07-26T13:58:22.114262+00:00 app[web.1]: 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2022-07-26T13:58:22.114264+00:00 app[web.1]: Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:58:22.114265+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+2022-07-26T13:58:22.114265+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+2022-07-26T13:58:22.114266+00:00 app[web.1]: 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528)
+2022-07-26T13:58:22.114267+00:00 app[web.1]: 	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+2022-07-26T13:58:22.114268+00:00 app[web.1]: 	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+2022-07-26T13:58:22.114268+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:154)
+2022-07-26T13:58:22.114269+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:22.114269+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+2022-07-26T13:58:22.114270+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:22.114270+00:00 app[web.1]: 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+2022-07-26T13:58:22.114270+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:22.114271+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+2022-07-26T13:58:22.114271+00:00 app[web.1]: 	at com.sun.proxy.$Proxy109.save(Unknown Source)
+2022-07-26T13:58:22.114272+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:58:22.114272+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:58:22.114272+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:58:22.114273+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:58:22.114273+00:00 app[web.1]: 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+2022-07-26T13:58:22.114273+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+2022-07-26T13:58:22.114274+00:00 app[web.1]: 	at com.sun.proxy.$Proxy71.save(Unknown Source)
+2022-07-26T13:58:22.114274+00:00 app[web.1]: 	at cvut.fel.StartApplication.run(StartApplication.java:36)
+2022-07-26T13:58:22.114275+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+2022-07-26T13:58:22.114275+00:00 app[web.1]: 	... 13 common frames omitted
+2022-07-26T13:58:22.114276+00:00 app[web.1]: Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:58:22.114276+00:00 app[web.1]: 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+2022-07-26T13:58:22.114277+00:00 app[web.1]: 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+2022-07-26T13:58:22.114277+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+2022-07-26T13:58:22.114281+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+2022-07-26T13:58:22.114281+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+2022-07-26T13:58:22.114282+00:00 app[web.1]: 	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+2022-07-26T13:58:22.114282+00:00 app[web.1]: 	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+2022-07-26T13:58:22.114283+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3153)
+2022-07-26T13:58:22.114283+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3759)
+2022-07-26T13:58:22.114283+00:00 app[web.1]: 	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+2022-07-26T13:58:22.114284+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+2022-07-26T13:58:22.114284+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+2022-07-26T13:58:22.114284+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+2022-07-26T13:58:22.114285+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+2022-07-26T13:58:22.114285+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+2022-07-26T13:58:22.114286+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+2022-07-26T13:58:22.114286+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+2022-07-26T13:58:22.114292+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+2022-07-26T13:58:22.114292+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+2022-07-26T13:58:22.114292+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+2022-07-26T13:58:22.114293+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+2022-07-26T13:58:22.114293+00:00 app[web.1]: 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+2022-07-26T13:58:22.114293+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:721)
+2022-07-26T13:58:22.114294+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:707)
+2022-07-26T13:58:22.114294+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:58:22.114294+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:58:22.114295+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:58:22.114295+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:58:22.114296+00:00 app[web.1]: 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
+2022-07-26T13:58:22.114296+00:00 app[web.1]: 	at com.sun.proxy.$Proxy94.persist(Unknown Source)
+2022-07-26T13:58:22.114296+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554)
+2022-07-26T13:58:22.114297+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:58:22.114297+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:58:22.114297+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:58:22.114298+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:58:22.114298+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.ImplementationInvocationMetadata.invoke(ImplementationInvocationMetadata.java:72)
+2022-07-26T13:58:22.114299+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:382)
+2022-07-26T13:58:22.114299+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:205)
+2022-07-26T13:58:22.114300+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:549)
+2022-07-26T13:58:22.114300+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:22.114301+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:155)
+2022-07-26T13:58:22.114301+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+2022-07-26T13:58:22.114301+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:22.114305+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+2022-07-26T13:58:22.114306+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+2022-07-26T13:58:22.114306+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:22.114306+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+2022-07-26T13:58:22.114307+00:00 app[web.1]: 	... 29 common frames omitted
+2022-07-26T13:58:22.114307+00:00 app[web.1]: Caused by: org.postgresql.util.PSQLException: ERROR: relation "books" does not exist
+2022-07-26T13:58:22.114308+00:00 app[web.1]:   Position: 13
+2022-07-26T13:58:22.114308+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+2022-07-26T13:58:22.114308+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+2022-07-26T13:58:22.114309+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+2022-07-26T13:58:22.114309+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+2022-07-26T13:58:22.114309+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+2022-07-26T13:58:22.114310+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+2022-07-26T13:58:22.114310+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+2022-07-26T13:58:22.114310+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+2022-07-26T13:58:22.114311+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+2022-07-26T13:58:22.114311+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+2022-07-26T13:58:22.114312+00:00 app[web.1]: 	... 71 common frames omitted
+2022-07-26T13:58:22.179113+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:58:22.181626+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:58:22.332809+00:00 heroku[web.1]: Process exited with status 1
+2022-07-26T13:58:22.378123+00:00 heroku[web.1]: State changed from up to crashed
+2022-07-26T13:58:24.931781+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=testheorokudb.herokuapp.com request_id=0cd284fe-6588-472e-8ec9-0e77997c1cd6 fwd="147.32.213.240" dyno= connect= service= status=503 bytes= protocol=https
+2022-07-26T13:58:38.644144+00:00 heroku[web.1]: State changed from crashed to starting
+2022-07-26T13:58:41.750049+00:00 heroku[web.1]: Starting process with command `java -Dserver.port=10492 $JAVA_OPTS -jar target/spring-data-jpa-1.0.jar`
+2022-07-26T13:58:42.497214+00:00 app[web.1]: Create a Procfile to customize the command used to run this process: https://devcenter.heroku.com/articles/procfile
+2022-07-26T13:58:42.511936+00:00 app[web.1]: Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+2022-07-26T13:58:42.514903+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 
+2022-07-26T13:58:44.322282+00:00 app[web.1]: 
+2022-07-26T13:58:44.322311+00:00 app[web.1]:   .   ____          _            __ _ _
+2022-07-26T13:58:44.322312+00:00 app[web.1]:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2022-07-26T13:58:44.322332+00:00 app[web.1]: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2022-07-26T13:58:44.322360+00:00 app[web.1]:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2022-07-26T13:58:44.322394+00:00 app[web.1]:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2022-07-26T13:58:44.322421+00:00 app[web.1]:  =========|_|==============|___/=/_/_/_/
+2022-07-26T13:58:44.323881+00:00 app[web.1]:  :: Spring Boot ::        (v2.3.4.RELEASE)
+2022-07-26T13:58:44.323897+00:00 app[web.1]: 
+2022-07-26T13:58:44.460739+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Starting StartApplication v1.0 on 58beef1f-7697-4e39-9660-a047a6e32a53 with PID 4 (/app/target/spring-data-jpa-1.0.jar started by u11263 in /app)
+2022-07-26T13:58:44.460997+00:00 app[web.1]: DEBUG cvut.fel.StartApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2022-07-26T13:58:44.461262+00:00 app[web.1]: INFO  cvut.fel.StartApplication - No active profile set, falling back to default profiles: default
+2022-07-26T13:58:47.658054+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-07-26T13:58:48.316321+00:00 app[web.1]: INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 650ms. Found 1 JPA repository interfaces.
+2022-07-26T13:58:49.522372+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10492 (http)
+2022-07-26T13:58:49.590513+00:00 app[web.1]: INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5086 ms
+2022-07-26T13:58:50.622058+00:00 app[web.1]: INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://ec2-52-204-157-26.compute-1.amazonaws.com:5432/d4d6qtoc591dbf?password=95e2edc07f843fe753f968db06529ea937b33562c91a100fbaffae2339e0b687&sslmode=require&user=yruxwrnvoorndz'
+2022-07-26T13:58:51.375865+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:58:52.342630+00:00 app[web.1]: WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26T13:58:53.615252+00:00 app[web.1]: INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10492 (http) with context path ''
+2022-07-26T13:58:54.095963+00:00 heroku[web.1]: State changed from starting to up
+2022-07-26T13:58:54.504010+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-07-26T13:58:56.726740+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:58:57.555286+00:00 app[web.1]: INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-07-26T13:58:57.562305+00:00 app[web.1]: INFO  cvut.fel.StartApplication - Started StartApplication in 14.113 seconds (JVM running for 15.047)
+2022-07-26T13:58:57.564025+00:00 app[web.1]: INFO  cvut.fel.StartApplication - StartApplication...
+2022-07-26T13:58:57.624911+00:00 app[web.1]: ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "books" does not exist
+2022-07-26T13:58:57.624915+00:00 app[web.1]:   Position: 13
+2022-07-26T13:58:57.632106+00:00 app[web.1]: INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-07-26T13:58:57.632107+00:00 app[web.1]: 
+2022-07-26T13:58:57.632123+00:00 app[web.1]: Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26T13:58:57.638422+00:00 app[web.1]: ERROR o.s.boot.SpringApplication - Application run failed
+2022-07-26T13:58:57.638423+00:00 app[web.1]: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+2022-07-26T13:58:57.638424+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+2022-07-26T13:58:57.638424+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+2022-07-26T13:58:57.638424+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+2022-07-26T13:58:57.638424+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+2022-07-26T13:58:57.638425+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+2022-07-26T13:58:57.638425+00:00 app[web.1]: 	at cvut.fel.StartApplication.main(StartApplication.java:22)
+2022-07-26T13:58:57.638425+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:58:57.638425+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:58:57.638426+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:58:57.638426+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:58:57.638427+00:00 app[web.1]: 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+2022-07-26T13:58:57.638427+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+2022-07-26T13:58:57.638427+00:00 app[web.1]: 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+2022-07-26T13:58:57.638427+00:00 app[web.1]: 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2022-07-26T13:58:57.638429+00:00 app[web.1]: Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:58:57.638430+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+2022-07-26T13:58:57.638430+00:00 app[web.1]: 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+2022-07-26T13:58:57.638430+00:00 app[web.1]: 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528)
+2022-07-26T13:58:57.638431+00:00 app[web.1]: 	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+2022-07-26T13:58:57.638431+00:00 app[web.1]: 	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+2022-07-26T13:58:57.638432+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:154)
+2022-07-26T13:58:57.638432+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:57.638444+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+2022-07-26T13:58:57.638444+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:57.638444+00:00 app[web.1]: 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+2022-07-26T13:58:57.638444+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:57.638444+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+2022-07-26T13:58:57.638445+00:00 app[web.1]: 	at com.sun.proxy.$Proxy109.save(Unknown Source)
+2022-07-26T13:58:57.638445+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:58:57.638445+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:58:57.638445+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:58:57.638445+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:58:57.638446+00:00 app[web.1]: 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+2022-07-26T13:58:57.638446+00:00 app[web.1]: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+2022-07-26T13:58:57.638446+00:00 app[web.1]: 	at com.sun.proxy.$Proxy71.save(Unknown Source)
+2022-07-26T13:58:57.638447+00:00 app[web.1]: 	at cvut.fel.StartApplication.run(StartApplication.java:36)
+2022-07-26T13:58:57.638447+00:00 app[web.1]: 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+2022-07-26T13:58:57.638447+00:00 app[web.1]: 	... 13 common frames omitted
+2022-07-26T13:58:57.638448+00:00 app[web.1]: Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+2022-07-26T13:58:57.638448+00:00 app[web.1]: 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+2022-07-26T13:58:57.638448+00:00 app[web.1]: 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+2022-07-26T13:58:57.638448+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+2022-07-26T13:58:57.638452+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+2022-07-26T13:58:57.638453+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+2022-07-26T13:58:57.638453+00:00 app[web.1]: 	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+2022-07-26T13:58:57.638453+00:00 app[web.1]: 	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+2022-07-26T13:58:57.638453+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3153)
+2022-07-26T13:58:57.638454+00:00 app[web.1]: 	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3759)
+2022-07-26T13:58:57.638454+00:00 app[web.1]: 	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+2022-07-26T13:58:57.638454+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+2022-07-26T13:58:57.638454+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+2022-07-26T13:58:57.638455+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+2022-07-26T13:58:57.638455+00:00 app[web.1]: 	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+2022-07-26T13:58:57.638455+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+2022-07-26T13:58:57.638455+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+2022-07-26T13:58:57.638456+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+2022-07-26T13:58:57.638456+00:00 app[web.1]: 	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+2022-07-26T13:58:57.638456+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+2022-07-26T13:58:57.638456+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+2022-07-26T13:58:57.638456+00:00 app[web.1]: 	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+2022-07-26T13:58:57.638456+00:00 app[web.1]: 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+2022-07-26T13:58:57.638457+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:721)
+2022-07-26T13:58:57.638457+00:00 app[web.1]: 	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:707)
+2022-07-26T13:58:57.638457+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:58:57.638459+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:58:57.638460+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:58:57.638460+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:58:57.638460+00:00 app[web.1]: 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
+2022-07-26T13:58:57.638460+00:00 app[web.1]: 	at com.sun.proxy.$Proxy94.persist(Unknown Source)
+2022-07-26T13:58:57.638460+00:00 app[web.1]: 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554)
+2022-07-26T13:58:57.638461+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-07-26T13:58:57.638461+00:00 app[web.1]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-07-26T13:58:57.638461+00:00 app[web.1]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-07-26T13:58:57.638461+00:00 app[web.1]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-07-26T13:58:57.638461+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.ImplementationInvocationMetadata.invoke(ImplementationInvocationMetadata.java:72)
+2022-07-26T13:58:57.638462+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:382)
+2022-07-26T13:58:57.638462+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:205)
+2022-07-26T13:58:57.638463+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:549)
+2022-07-26T13:58:57.638463+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:57.638463+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:155)
+2022-07-26T13:58:57.638464+00:00 app[web.1]: 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+2022-07-26T13:58:57.638464+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:57.638467+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+2022-07-26T13:58:57.638467+00:00 app[web.1]: 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+2022-07-26T13:58:57.638467+00:00 app[web.1]: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+2022-07-26T13:58:57.638467+00:00 app[web.1]: 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+2022-07-26T13:58:57.638468+00:00 app[web.1]: 	... 29 common frames omitted
+2022-07-26T13:58:57.638468+00:00 app[web.1]: Caused by: org.postgresql.util.PSQLException: ERROR: relation "books" does not exist
+2022-07-26T13:58:57.638468+00:00 app[web.1]:   Position: 13
+2022-07-26T13:58:57.638468+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+2022-07-26T13:58:57.638469+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+2022-07-26T13:58:57.638469+00:00 app[web.1]: 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+2022-07-26T13:58:57.638469+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+2022-07-26T13:58:57.638469+00:00 app[web.1]: 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+2022-07-26T13:58:57.638469+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+2022-07-26T13:58:57.638469+00:00 app[web.1]: 	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:120)
+2022-07-26T13:58:57.638470+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+2022-07-26T13:58:57.638470+00:00 app[web.1]: 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+2022-07-26T13:58:57.638470+00:00 app[web.1]: 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+2022-07-26T13:58:57.638470+00:00 app[web.1]: 	... 71 common frames omitted
+2022-07-26T13:58:57.702581+00:00 app[web.1]: INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26T13:58:57.704865+00:00 app[web.1]: INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26T13:58:57.890601+00:00 heroku[web.1]: Process exited with status 1
+2022-07-26T13:58:57.963459+00:00 heroku[web.1]: State changed from up to crashed
