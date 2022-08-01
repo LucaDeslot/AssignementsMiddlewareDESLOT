@@ -1,0 +1,21 @@
+1. What happens if another broker goes down ?
+
+If another borker goes down, the console keep spamming the message : 
+
+[2022-07-27 14:28:22,509] WARN [Consumer clientId=console-consumer, groupId=console-consumer-89319] Connection to node 2 (luca-CREM-WXX9/127.0.1.1:9094) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+
+connection doesn't seem to work anymore
+
+2. What if you have 5 brokers and 2 go down?
+
+A notification says that the connection to the node we killed could not be established.
+However messages can still be sent.
+
+3. What if you changed the replication factor for your topic?
+
+For example if we set the replication factor to 5, messages won't be send because it needs to be replicated 5 times so 5 brokers have to be up.
+Indeed, replication factor sepcify how many time the message will be replicated in order to provide availability. The more the replication factor the more date will be reliable and available.
+
+
+For the screenshots I set replication factor to 3 and launched 4 brokers. When I shutdown the Broker 4 messages can still be send since replication factor is 3 and there is still 3 broker up. When I shutdown Broker 3 messages can't pass from producer to consumers anymore which is normal since the replication can't happen anymore with just two brokers.
+See the screenshots for more details.
